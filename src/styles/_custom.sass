@@ -2,14 +2,13 @@
   &-1
     animation: float1 3.5s ease-in-out infinite alternate
     position: absolute
-    top: 20%
-    right: 10%
+    top: 29%
+    right: 80%
   &-2
     animation: float1 2.8s ease-in-out infinite alternate
     position: absolute
-    top: 51%
-    right: 30%
-
+    top: 71%
+    right: 10%
 
 @keyframes float1
   0%
@@ -22,6 +21,283 @@
     background-image: url("../assets/curso/portada/fondo-banner-principal.png")
     background-size: cover
     background-position: center
+    @media (max-width: $bp-max-md)
+      background-image: url("../assets/curso/portada/fondo-banner-principal-md.png")
+    @media (max-width: $bp-max-xs)
+      background-image: url("../assets/curso/portada/fondo-banner-principal-sm.png")
+  .tarjeta
+    background-position: left 50% !important
+  
+.banner-interno__fondo
+  background-image: url("../assets/curso/portada/fondo-paginas.png") !important
+
+.banner-principal__row .banner-principal__img
+  width: 435px !important  
+
+.titulo-principal.color-acento-contenido .titulo-principal__numero span
+  color: black !important   
+
+// versión escritorio/movil
+@media (min-width: 992px)
+  .desktop 
+    display: inline
+  .movil 
+    display: none
+@media (max-width: 991px)
+  .movil 
+    display: inline
+  .desktop 
+    display: none
+
+@media (max-width: 576px)
+  .header__componente-formativo
+    font-size: 1rem !important
+
+.BG00, .style___box_8, .tabs-c__content-item
+  background-color: #DCD8F2
   
 .txt--green
   color: #39A900 !important
+
+.style___box_8
+  border-radius: 15px
+  padding: 1.2rem
+
+//- tarjeta con borde - subtítulo con icono y texto
+.bg
+  &-c1
+    background-color: #DCD8F2
+    border: 4px solid #523DBF
+  &-c2 
+    background-color: #FFD6E3
+    background-repeat: repeat-x
+    background-position: center center // centro horizontal y vertical
+    height: 40px
+    display: flex
+    align-items: center
+    justify-content: center 
+  &-c3
+    background-image: url(../assets/curso/bg2.png)
+    background-repeat: no-repeat
+    background-size: cover
+    margin-inline: -3.2rem !important
+  &-c4
+    background-color: #DCD8F2
+
+//linea de tiempo d
+.linea-tiempo-d.color-acento-botones.especial
+  .linea-tiempo-d__item--selected
+    .linea-tiempo-d__item__content
+      background-color: #EAE7FB !important
+  .linea-tiempo-d__item__content.tarjeta.tarjeta--gris
+    background-color: #B9B1E5
+.tarjeta.tarjeta--gris
+  background-color: #FBFFD0
+
+.linea-tiempo-d__item__content__title
+  height: 50px
+
+.linea-tiempo-d__item__number.tarjeta.tarjeta--gris
+  border: 3px solid #F1FF64
+
+// tabsC
+.tabs-c__tab
+  background-color: #FBFFD0
+.tabs-c__tab--active
+  background-color: #fff
+.tabs-c__header
+  margin-bottom: 0 !important
+.tabs-c.color-acento-botones .tabs-c__tab--active
+  font-weight: 700
+
+/// AJUSTE ESPACIO RESPOSINVE
+.espacio___movil_1
+  @media screen and (max-width: 1200px)
+    margin-top: -1rem !important
+
+/// INTRO
+.style___box_1
+  background-color: #000
+  padding: 0.3rem 0.5rem 0.3rem 0rem
+  padding-top: 2rem
+  img
+    margin-left: -0.2rem !important
+  @media screen and (max-width: 1200px)
+    padding: 1.5rem
+  @media screen and (min-width: 1400px)
+    padding: 0rem 1rem 0rem 0rem
+
+.style___box_2
+  background-color: #DCD8F2
+  padding: 0.3rem 0.5rem 0.3rem 0rem
+  img
+    margin-left: -0.7rem !important
+  @media screen and (max-width: 1200px)
+    padding: 1.5rem
+  @media screen and (min-width: 1400px)
+    padding: 0rem 1rem 0rem 0rem
+
+.style___box_3
+  background-color: #DCD8F2
+  border-radius: 10px
+  padding: 0rem 0.5rem 0rem 0rem
+  img
+    margin-left: -0.7rem !important
+  @media screen and (max-width: 1200px)
+    padding: 1.5rem
+
+.ajuste___box_3
+  background-color: #FFD6E3
+  padding: 1.2rem
+  @media screen and (max-width: 1200px)
+    padding: 1.5rem
+
+///////////// Organizar las litas --------------------------------------------------
+
+.lista-ul li, ol.lista-ol li, .lista-ul--color li, .ol.lista-ol--cuadro li, .lista-ol--cuadro li, .lista-ul--separador li, .lista-ul li
+  display: flex
+
+.list-color li  
+  display: block
+
+// Tarjetas BG -------------------------------------
+.bg-1
+  background-image: url(../assets/curso/bg1.png)
+  background-repeat: no-repeat
+  background-size: cover
+  margin-inline: -3.2rem !important
+
+.BGIMG01
+  background-image: url("../assets/curso/fondo-tab.png")
+
+// Tarjeta Azul Slide
+.tarjeta--BG01
+  background-image: url("../assets/curso/fondo-slyder.png")
+  background-size: cover 
+  background-repeat: no-repeat
+  background-position: center
+  height: 100%
+  h4, p
+    color: #000
+
+// Botones Tarjeta Azul Slider
+.slyder-a__btn--sigt, .slyder-a__btn--atrs, .slyder-a__bullets__item
+  background-color: #F1FF64
+
+.slyder-a__btn--sigt, .slyder-a__btn--atrs
+  color: #ffff
+
+.slyder-a__bullets__item
+  @media (max-width: 450px)
+    margin: 0 5px
+  @media (max-width: 400px)
+    margin: 0 4px
+
+.slyder-a__bullets__item--active
+  background-color: #523DBF
+
+// Estilo tarjeta hover
+.img90
+  width: 80px 
+
+.titulo-1
+  background-color: #FE9AB8
+  color: #12263F
+  padding: 4px 10px
+  display: inline-flex
+  align-items: center
+  justify-content: flex-start
+  text-align: center
+
+.crd
+  &.brd--rad
+    border-radius: 20px 
+  &.crd--grayGrad
+    padding: 2rem
+    height: 100%
+    background-image: url('../assets/curso/temas/tema2/BG01.svg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    height: 100%
+    border-radius: 15px    
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)
+    &:hover      
+      background: linear-gradient(180deg, rgba(25,137,226,1) 0%, rgba(10,81,139,1) 100%)  
+      background-image: url('../assets/curso/temas/tema2/BG02.svg')
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: center
+      .bottomCircle
+        &::before
+          background-color: #FFEBF1
+          border: 4px solid $color-acento-contenido
+          border-radius: 10px
+
+.bottomCircle
+  position: relative
+  & > *
+    position: relative
+  &::before
+    content: ""
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    width: 50px
+    height: 50px
+    background-color: #F1FF64
+    border: 4px solid $color-acento-contenido
+    border-radius: 10px
+
+.tarjeta--C02
+  background-color: #B9B1E5
+
+.tarjeta--BG03
+  background-image: url("../assets/curso/BG03.png")
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center
+
+.acordion
+  .acordion__activo
+    background-color: #EAE7FB
+  &__accion
+    &__btn
+      &--b
+        border: none
+    .acordion__accion__btn--b
+      background-color: #F1FF64
+    .acordion__accion__btn--b i
+      color: #12263F
+
+.tarjeta--BG05
+  background-color: #D6CDD9 !important
+  background-size: cover 
+  background-repeat: no-repeat
+  background-position: center
+  border-radius: 10px
+
+.tarjeta.color-secundario *
+  color: #12263F
+
+.slyder-f__btn > i
+  color: #F1FF64
+
+.estilo___ul
+  li
+    margin-left: -1rem
+
+.style___box_14
+  background-color: #FFEBF1
+  padding: 0rem 0rem 0rem 1.5rem
+  border-radius: 10px
+  img
+    margin-right: -0.7rem !important
+  @media screen and (max-width: 1200px)
+    padding: 1.5rem
+  @media screen and (min-width: 1400px)
+    padding: 0rem 0rem 0rem 1.5rem
+
+.fa-robot
+  color: #523DBF

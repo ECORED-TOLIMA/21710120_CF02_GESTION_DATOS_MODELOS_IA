@@ -1,1 +1,1 @@
-module.exports = 'ECOBASE_SENA'
+module.exports = 'Técnicas de limpieza en modelos de aprendizaje automático'

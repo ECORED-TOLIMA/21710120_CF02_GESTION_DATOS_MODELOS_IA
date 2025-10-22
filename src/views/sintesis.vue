@@ -2,13 +2,14 @@
 .curso-main-container.pb-3
   BannerInterno(icono="fas fa-sitemap" titulo="Síntesis")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5
-    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu tincidunt erat. Fusce cursus mauris in nulla egestas vulputate. Phasellus viverra accumsan libero, sed luctus diam maximus euismod. Mauris sem risus, tincidunt vel libero in, lobortis commodo ante. Sed pulvinar luctus orci in rhoncus. Nulla ut dapibus risus, ac tempor est. Donec nulla augue, vehicula quis malesuada vitae, fermentum non nisi. Donec tincidunt nibh a magna bibendum rutrum. 
-    
+    p Este componente analiza los principios universales que sustentan las técnicas más usadas en la limpieza y preparación de datos para modelos de inteligencia artificial. La gestión eficaz de datos en modelos de inteligencia artificial, exige un enfoque sistemático y exhaustivo que abarque desde la limpieza inicial de datos hasta la evaluación rigurosa de los modelos. Cada etapa del proceso contribuye de manera significativa al éxito final del proyecto y la negligencia en cualquier fase puede comprometer la efectividad y confiabilidad del sistema en su totalidad.
+    p La limpieza de datos constituye la base sobre la cual se desarrollan modelos robustos, mientras que la reducción de dimensionalidad optimiza la eficiencia computacional sin comprometer información esencial. La selección adecuada de técnicas de aprendizaje automático y algoritmos específicos determina la capacidad del modelo para identificar patrones significativos y generar predicciones precisas.
+    p.mb-5 La evaluación sistemática del modelo mediante métricas adecuadas garantiza que los sistemas desarrollados, no solo funcionen correctamente con los datos de entrenamiento, sino que también mantengan su rendimiento en aplicaciones del mundo real. La integración efectiva de todos estos componentes resulta en sistemas de inteligencia artificial que pueden proporcionar un valor tangible y confiable en una amplia gama de aplicaciones y dominios.
 
     .row.justify-content-center
       .col-lg-10.mb-5.bgs.p-4.brad
         figure
-          img(src="@/assets/curso/temas/sintesis.svg", alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu tincidunt erat. Fusce cursus mauris in nulla egestas vulputate. Phasellus viverra accumsan libero, sed luctus diam maximus euismod. Mauris sem risus, tincidunt vel libero in, lobortis commodo ante. Sed pulvinar luctus orci in rhoncus. Nulla ut dapibus risus, ac tempor est. Donec nulla augue, vehicula quis malesuada vitae, fermentum non nisi. Donec tincidunt nibh a magna bibendum rutrum. ")
+          img(src="@/assets/curso/temas/sintesis.svg", alt="En la síntesis del componente formativo Técnicas de limpieza en modelos de aprendizaje automático, se detallan los errores y las técnicas existentes para una adecuada limpieza; además, se relacionan las características que están presentes en la dimensionalidad, así como los tipos de aprendizaje que hay y cómo se llega a una selección adecuada del algoritmo y se finaliza, con la relación de las métricas que están presentes en el proceso de evaluación del modelo.")
       .col-auto
         a.anexo.mb-5(:href="obtenerLink('/downloads/Sintesis.pdf')" target="_blank")
           .anexo__icono
